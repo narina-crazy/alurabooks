@@ -1,0 +1,51 @@
+.topicos {
+    background: var(--azul-degrade);
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.topicos__titulo {
+    color: var(--cor-branco);
+    font-weight: 500;
+    font-size: 16px;
+    /* margin-bottom: 0.5rem;  ára separar mais os titulo dos topicos*/
+    
+}
+
+.topico__lista {
+    display: flex;
+    flex-wrap: wrap; /* esse codigo quebra a linha quando ele chega no final*/
+    justify-content: center;
+    list-style-type: none;  /*esse codigo retirar bullets da imagems */
+
+}
+
+.topico__link {
+    color: var(--cor-branco);
+    padding: 1rem;
+    background-color: var(--cor-laranja);
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.topico__item {
+    margin: 2rem 0.5rem ;
+
+}
+
+.lista__rodape__link{
+    text-decoration: none;
+}
+
+@media screen and (min-width:1024px) {
+ .topicos__titulo {
+    font-size: 24px
+ }
+
+ .topico__link {
+    font-size: 16px;
+ }
+
+}

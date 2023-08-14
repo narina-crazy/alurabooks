@@ -1,0 +1,155 @@
+.cabecalho__menu__hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.cabecalho {
+    background-color: var(--cor-branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1rem;
+}
+
+.lista__menu {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    width: auto; /* vai manter a caixa até onde termina a letra */
+}
+
+.container__botao:checked~.lista__menu {
+    display: block;
+}
+
+/* isso que faz a lista aparecer quando click no botao menu */
+
+
+.lista__menu__titulo,
+.lista__menu__item {
+    padding: 1rem;
+    background-color: var(--cor-branco);
+}
+
+.lista__menu__titulo {
+    color: var(--cor-laranja);
+    font-weight: 700;
+}
+
+.lista__menu__link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.container__botao {
+    display: none;
+}
+
+/* some com o box do botão hamburguer */
+
+
+.container__titulo {
+    display: none;
+    /* esse codigo faz o titulo ALURA BOOKS DESAPARECER nessa medida que é o mobile */
+}
+
+ .opcoes {
+    display: none;
+}   /* some as categorias quando dimimui a tela, do lado de fora do @media ele  aparece, do lado de dentro ele desaparece*/
+
+
+
+
+
+/* MEDIA NAVBAR */
+
+@media screen and (min-width: 1024px) {
+
+    .container__titulo,
+    .container__titulo__negrito {
+        font-family: var(--font-secundaria);
+        font-size: 30px;
+    }
+
+    .container__titulo {
+        font-weight: 400;
+        display: block;
+        /* esse codigo faz o titulo ALURA BOOKS APARECER nessa medida de 1024   */
+    }
+
+    .container__titulo__negrito {
+        font-weight: 700;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes__item {
+        padding: 0 1rem;
+        list-style-type: none;
+        /*esse codigo retirar bullets da imagems */
+        text-transform: uppercase;
+    }
+
+    .opcoes__link {
+        text-decoration: none;
+        color: var(--cor-preto);
+    }
+
+
+    .container__imagem-transparente {
+        display: none;
+    }
+
+    .cabeçalho__menu-hamburguer {
+        display: none;
+    }
+
+    .opções__botão:checked~.lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    .opções__botão {
+        display: none;
+    }
+
+  .container__imagem__transparente {
+    display: none; 
+  }
+
+    .cabecalho__menu__hamburguer {
+        display: none;
+    }
+
+     .opcoes__botao:checked ~ .lista__menu {
+        display: block;
+        width: auto;  /* vai manter a caixa até onde termina a letra */
+       
+     }
+
+     .opcoes__botao {
+        display: none; /* tirando a caixa do checkbox */
+     }
+}
+
+
+
+

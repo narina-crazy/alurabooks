@@ -1,0 +1,43 @@
+hr {
+    margin: 0;
+}
+
+.rodape {
+    background-color: var(--cor-branco);
+    padding: 1rem;
+   
+}
+
+.rodape__titulo {
+    font-size: 16px;
+    color: var(--cor-preto);
+}
+
+.lista__rodape{
+    text-decoration: none;
+}
+
+.rodape__autor {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 1.5rem 0 ;
+    background-color: var(--cor-branco);
+    font-size: 14px;
+    font-family: var(--font-principal);
+    
+}
+
+.link_rodape {
+    text-decoration: none;
+    color: blue;
+}
+
+@media screen and (min-width: 1024px){
+    .rodape {
+        display: flex; /* coloca as listas um ao lado do outro */
+        justify-content: center;
+    }
+
+
+        
+}
